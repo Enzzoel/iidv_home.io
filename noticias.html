@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IIDV - Notícias</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="style_index.css" media="screen" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+        <!--LOGO IIDV-->
+        <link rel="sortcut icon" href="assets/iidv_icon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+        <!--UIKIT-->
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+        <!-- UIkit CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/css/uikit.min.css" />
+        <!-- UIkit JS -->
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/js/uikit-icons.min.js"></script>
+    <!--FIM DO UIKIT-->
+
+    </head>
+    <body>
+        
+      <header>  <!--------------------------------INÍCIO DO CABEÇALHO ----------------------------------------------------->
+        <nav id="navindex" class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <!--Adicionando a mini logo do IIDV-->
+                <img src="assets/logos/iidv_logo.png" width="40" height="40" alt=""/>
+            </a>
+
+            <!-- ---------------- 1 : MEIO DE ACESSAR O MENU >WEB< ---------------- -->
+
+            <div id="navbarNavlines" class="uk-navbar-left">
+              <ul id="nav-uk-lines" class="uk-navbar-nav">
+                  <li><a href="#index_editais" uk-toggle><span uk-icon="file-text"></span> Editais</a></li>
+                  <li><a href="#index_eventos" uk-toggle><span uk-icon="calendar"></span> Eventos</a></li>
+                  <li><a href="#index_mobilidade" uk-toggle><span uk-icon="play-circle"></span> Mobilidade</a></li>
+                  <li><a href="#index_contatos" uk-toggle><span uk-icon="receiver"></span> Contato</a></li>
+                  <li><a href="#index_diretorias" uk-toggle><span uk-icon="world"></span> Diretorias</a></li>
+                  <li><a href="#index_acesso" uk-toggle><span uk-icon="sign-in"></span> Acesso</a>
+                      <div id="div-index-acesso" uk-dropdown="pos: bottom-left; mode: click">
+                          <ul class="uk-nav uk-dropdown-nav">
+                              <li><a href="#"><span uk-icon="user"></span>Área do associado (Pessoa Física)</a></li>
+                              <li><a href="#"><span uk-icon="user"></span>Área do associado (Pessoa Juridica)</a></li>
+                              <li><a href="#"><span uk-icon="user"></span>Quero ser um associado</a></li>
+                          </ul>
+                      </div>
+                  </li>
+              </ul>
+            </div>
+
+            <!-- ---------------- 2 : MEIO DE ACESSAR O MENU >MOBILE< ---------------- -->
+
+            <div class="nav" id="navbarNav">
+              <ul class="nav">
+                <li class="nav-item">
+                  <!--BOTÃO QUE INICIA A NAVBAR PARA ACESSAR OUTRAS COISAS-->
+                  <button id="btnareanav" class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-usage"><span uk-icon="menu"></span></button>
+                  <div id="offcanvas-usage" uk-offcanvas>
+                      <div id="navukindex" class="uk-offcanvas-bar">
+                          <button id="btnclosenav" class="uk-offcanvas-close" type="button" uk-close></button>
+                          <ul id="navukul" class="uk-nav uk-dropdown-nav">
+
+                            <!--BOTÃO DOS EDITAIS-->
+
+                            <li><a href="#index_editais" uk-toggle><span uk-icon="file-text"></span> Editais</a></li>
+                            <!-- ------------------------ 
+                              
+                            EDITAIS ÁREA 
+                              
+                            ----------------------- -->
+                            <div id="index_editais" class="uk-flex-top" uk-modal>
+                              <div id="popup-body" class="uk-modal-dialog uk-modal-body">
+                                  <button class="uk-modal-close-default" type="button" uk-close></button>
+                                  <!--EDITAIS-->
+                                  <p id="p-editais-title">EDITAIS - 2021</p>
+                                  <div id="list-editais">
+                                    <img src="assets/news_icon.png" width="80" height="80" alt=""/>
+                                    <!--Edital - Título-->
+                                    <a id="list-editais-title" href="#">EDITAL DE PROCESSO SELETIVO INTERNO PARA PUBLICAÇÃO DE LIVRO MEMORIAL PDV 2021</a>
+                                  </div>
+                                  <hr class="uk-divider-icon">
+                                  <div id="list-editais">
+                                    <img src="assets/news_icon.png" width="80" height="80" alt=""/>
+                                    <!--Edital - Título-->
+                                    <a id="list-editais-title" href="#">RESULTADO DO EDITAL N° 01.2021, REFERENTE A SELEÇÃO DE MONITORES PARA PARTICIPAÇÃO VOLUNTÁRIA NO COINTER PDV 2021</a>
+                                  </div>
+                              </div>
+                            </div>
+                                                       
+                            <!--BOTÃO DOS EVENTOS-->
+                            
+                            <li><a href="#index_eventos" uk-toggle><span uk-icon="calendar"></span> Eventos</a></li>
+                            <!-- ------------------------ 
+                              
+                            EVENTOS ÁREA 
+                              
+                            ----------------------- -->
+                            <div id="index_eventos" class="uk-flex-top" uk-modal>
+                              <div id="popup-body" class="uk-modal-dialog uk-modal-body">
+                                  <button class="uk-modal-close-default" type="button" uk-close></button>
+                                  <!--EDITAIS-->
+                                  <p id="p-eventos-title">EVENTOS</p>
+                                  <!-- EVENTO MAIS RECENTE -->
+                                    <div class="uk-child-width-expand@s" uk-grid>
+                                      <div id="img-index-eventos" class="uk-grid-item-match">
+                                        <img src="assets/logos/logo_cointer2021.png" width="100" height="100" alt=""/>
+                                      </div>
+                                      <div>
+                                          <p id="p-eventos-title">
+                                            COINTER 2021<br/>
+                                            <!-- Este mini LABEL é apenas para caso você queira dizer o tempo que foi adicionado-->
+                                            <span class="uk-label">Postagem feita em 26/08/2021</span>
+                                          </p>
+                                          <p id="p-eventos-text">
+                                            O Congresso Internacional do Programa Despertando Vocações – Cointer PDV é uma 
+                                            realização do Instituto Internacional Despertando Vocações, que tem compromisso 
+                                            com a democratização do conhecimento e com uma Educação de qualidade e tem como 
+                                            objetivos: discutir os caminhos e perspectivas dos estudos na área; divulgar os 
+                                            conteúdos e resultados de pesquisas; estabelecer trocas de experiências entre 
+                                            docentes investigadores do Brasil e do exterior, contribuir na formação dos 
+                                            estudantes e estimular a geração de novas redes de cooperação multicêntricas. 
+                                            A intenção é, dessa forma, estimular, numa perspectiva plural, conversações e 
+                                            reflexões sobre a área, em diversos âmbitos.
+                                          </p>
+                                          <p id="p-eventos-text">
+                                            <!-- ------------------------ CONTADOR DO EVENTO TAL ------------------------ -->
+                                            <div id="count-eventos" class="uk-grid-small uk-child-width-auto" uk-grid uk-countdown="date: 2021-12-01T17:00:00-03:00">
+                                              <div>
+                                                  <div id="count-eventos-index" class="uk-countdown-number uk-countdown-days"></div>
+                                                  <div id="count-eventos-index-sub" class="uk-countdown-label uk-margin-small uk-text-center">Dias</div>
+                                              </div>
+                                              <div id="count-eventos-index" class="uk-countdown-separator">:</div>
+                                              <div>
+                                                  <div id="count-eventos-index" class="uk-countdown-number uk-countdown-hours"></div>
+                                                  <div id="count-eventos-index-sub" class="uk-countdown-label uk-margin-small uk-text-center">Horas</div>
+                                              </div>
+                                              <div id="count-eventos-index" class="uk-countdown-separator">:</div>
+                                              <div>
+                                                  <div id="count-eventos-index" class="uk-countdown-number uk-countdown-minutes"></div>
+                                                  <div id="count-eventos-index-sub" class="uk-countdown-label uk-margin-small uk-text-center">Minutos</div>
+                                              </div>
+                                              <div id="count-eventos-index" class="uk-countdown-separator">:</div>
+                                              <div>
+                                                  <div id="count-eventos-index" class="uk-countdown-number uk-countdown-seconds"></div>
+                                                  <div id="count-eventos-index-sub" class="uk-countdown-label uk-margin-small uk-text-center">Segundos</div>
+                                              </div>
+                                            </div>
+                                            <!-- ------------------------ FIM DO CONTADOR DO EVENTO TAL ------------------------ -->
+                                          </p>
+                                      </div>
+                                    </div>
+                                    <hr class="uk-divider-icon">
+                                  <!-- EVENTOS RESTANTES -->
+                              </div>
+                            </div>
+                            
+                            <!--BOTÃO DA MOBILIDADE-->
+                            
+                            <li><a href="#index_mobilidade" uk-toggle><span uk-icon="play-circle"></span> Mobilidade</a></li>
+                            <!-- ------------------------ 
+                              
+                            MOBILIDADE ÁREA 
+                              
+                            ----------------------- -->
+                            <div id="index_mobilidade" class="uk-flex-top" uk-modal>
+                              <div id="popup-body" class="uk-modal-dialog uk-modal-body">
+                                  <button class="uk-modal-close-default" type="button" uk-close></button>
+                                  <!--MOBILIDADE-->
+                                  <p id="p-mobilidade-title">Mobilidade Internacional</p>
+                                  <p id="p-mobilidade-subtitle">A Internacionalização no Instituto IDV</p>
+                                  <p id="p-mobilidade-text">A Internacionalização é um dos princípios norteadores 
+                                    do Programa Internacional Despertando Vocações - PDV. Entendemos as diversas 
+                                    possibilidades de ocorrer o processo de internacionalização. Desde os cursos 
+                                    de extensão na plataforma virtual IDVLearning, eventos acadêmicos e profissionais, 
+                                    às publicações literárias compartilhadas por pessoas de línguas, lugares e culturas 
+                                    distintas através da Editora IIDV ou a IJET-PDVL.</p>
+                                  <p id="p-mobilidade-text">A mobilidade internacional permite, de forma intensa, a imersão em universos 
+                                    culturais que aproximam os olhares através de perspectivas distintas e desafios comuns.</p>
+                                  <p id="p-mobilidade-text">O formato de rede de cooperação possibilita aos participantes do PDV 
+                                    com planejamento adequado realizar experiência de estudar no exterior. Nos últimos anos mais 
+                                    de uma centena de estudantes envolvidos nas atividades do PDV participaram de mobilidade de curta 
+                                    e longa duração. Apesar de não ser um programa de mobilidade internacional estimula seus membros 
+                                    à experiência de estudar no estrangeiro.</p>
+                                  <button class="uk-button uk-button-primary">Leia Mais</button>
+                              </div>
+                            </div>
+                            
+                            <!--BOTÃO DOS CONTATOS-->
+                            
+                            <li><a href="#index_contatos" uk-toggle><span uk-icon="receiver"></span> Contato</a></li>
+                            <!-- ------------------------ 
+                              
+                            CONTATO ÁREA 
+                              
+                            ----------------------- -->
+                            <div id="index_contatos" class="uk-flex-top" uk-modal>
+                              <div id="popup-body" class="uk-modal-dialog uk-modal-body">
+                                  <button class="uk-modal-close-default" type="button" uk-close></button>
+                                  <div class="container-fluid row">
+                                    <!--Aqui é o mapa para encontrar o IIDV-->
+                                    <div id="div-contatos" class="col">
+                                      <p id="p-contatos-title">Encontrem-nos</p>
+                                      <!--iframe da Rua do IIDV-->
+                                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d493.8217688451058!2d-34.89993184130359!3d-8.042762887894511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18fb964aa3e3%3A0x859372b563a8c778!2sR.%20Abelardo%2C%2045%20-%20Gra%C3%A7as%2C%20Recife%20-%20PE%2C%2052050-310!5e0!3m2!1spt-BR!2sbr!4v1632399086940!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                    </div>
+                                    <!--Aqui é os contatos do IIDV-->
+                                    <div id="div-contatos" class="col">
+                                      <p id="p-contatos-title">Informações</p>
+                                      <!--Informações dos contatos do IIDV-->
+                                      <ul class="uk-list">
+                                        <li><span uk-icon="icon: location; ratio: 2"></span> <b>Endereço:</b> Rua Aberlado, 45, Graças, Recife-PE, Brasil, CEP 52.050 – 310</li>
+                                        <li><span uk-icon="icon: receiver; ratio: 2"></span> <b>Fone | Whatsapp</b> (+55) 81 9 8199-8763</li>
+                                        <li><span uk-icon="icon: location; ratio: 2"></span> <b>Email:</b> iidv@institutoidv.org</li>
+                                        <li><span uk-icon="icon: location; ratio: 2"></span> <b>Site:</b> <a href="https://institutoidv.org/">Instituto Internacional Despertando Vocações</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                              </div>
+                            </div>
+                            <!--BOTÃO DAS DIRETORIAS-->
+                            
+                            <li><a href="#index_diretorias" uk-toggle><span uk-icon="world"></span> Diretorias</a></li>
+                            <!-- ------------------------ 
+                              
+                            DIRETORIAS ÁREA 
+                              
+                            ----------------------- -->
+                            <div id="index_diretorias" class="uk-flex-top" uk-modal>
+                              <div id="popup-body" class="uk-modal-dialog uk-modal-body">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <!--DIRETORIAS-->
+                                <!--SLIDER DIRETORIAS-->
+                                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true">
+
+                                  <p id="p-diretorias-title">Diretoria Executiva</p>
+                                  <ul class="uk-slider-items uk-grid">
+                                      <li class="uk-width-3-4">
+                                          <div class="uk-panel">
+                                            <!--Diretoria Presidencial-->
+                                            <div id="diretoria1">
+                                              <p id="p-diretorias-title">Diretoria Presidencial</p>
+                                                <div id="dirt-box" class="uk-card uk-card-default">
+                                                  <div id="dirt-img" class="uk-card-media-top">
+                                                      <img src="img/diretorias/Kilma-diretorias-profile.png" width="250" height="250" alt="">
+                                                  </div>
+                                                  <div id="dirt-text" class="uk-card-body">
+                                                      <h3 class="uk-card-title"><a href="http://lattes.cnpq.br/3213226171590628" target="_blank">Drª. Kilma Viana</a></h3>
+                                                      <p>A presidência do IIDV é eleita a cada quatro anos pelos sócios 
+                                                        fundadores e sêniores, possui como suas principais atribuições:</p>
+                                                      <ul class="uk-list">
+                                                        <li>1.	Fomentar políticas, planejar, coordenar e supervisionar 
+                                                          o cadastro de projetos e a execução de atividades de extensão;</li>
+                                                        <li>2. Convocar e presidir as reuniões da Diretoria Executiva;</li>
+                                                        <li>3. Convocar e presidir as Assembleias Gerais Ordinárias e Extraordinárias;</li>
+                                                        <li>4. Juntamente com o Tesoureiro, abrir e manter contas bancárias, assinar 
+                                                          cheques e documentos bancários e contábeis;</li>
+                                                        <li>5. Organizar relatório contendo o balanço do exercício financeiro e os 
+                                                          principais eventos do ano anterior, apresentando-o à Assembleia Geral Ordinária;</li>
+                                                        <li>6. Contratar funcionários ou auxiliares especializados, fixando seus vencimentos, 
+                                                          podendo licenciá-los, suspendê-los ou demiti-los, com anuência da Diretoria Executiva, 
+                                                          em conformidade com o Parágrafo único, Artigo 13;</li>
+                                                        <li>7. Aprovar, junto com os demais membros da Diretoria Executiva, novos associados;</li>
+                                                        <li>8. Criar departamentos, coordenações, secretarias, comissões e outras estruturas 
+                                                          organizacionais que julgar necessários ao cumprimento das finalidades sociais, nomeando 
+                                                          e destituindo os respectivos responsáveis.</li>
+                                                      </ul>
+                                                      <p style="font-weight: bold; font-size: 18px;">Contato</p>
+                                                      Email: <a style="color: darkblue;" href="mailto:presidencia@institutoidv.org">presidencia@institutoidv.org</a><br/>
+                                                      Fone: <a style="color: darkblue;" href="https://api.whatsapp.com/send?1=pt_BR&amp;phone=558198199-8763" target="_blank">(+55) 81 98199-8763</a>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li class="uk-width-3-4">
+                                          <div class="uk-panel">
+                                            <!--Diretoria de Ensino-->
+                                            <div id="diretoria2">
+                                              <p id="p-diretorias-title">Diretoria de Ensino</p>
+                                                <div id="dirt-box" class="uk-card uk-card-default">
+                                                  <div id="dirt-img" class="uk-card-media-top">
+                                                      <img src="img/diretorias/Sergina-diretorias-profile.png" width="250" height="250" alt="">
+                                                  </div>
+                                                  <div id="dirt-text" class="uk-card-body">
+                                                      <h3 class="uk-card-title"><a href="http://lattes.cnpq.br/1744624647634264" target="_blank">MSc. Sergina Falcão</a></h3>
+                                                      <p>A diretoria de extensão tem como atribuições:</p>
+                                                      <ul class="uk-list">
+                                                        <li>I - Orientar, coordenar e controlar o desenvolvimento das atividades sob sua responsabilidade;</li>
+                                                        <li>II – Dirigir, orientar e acompanhar as atividades dos colaboradores 
+                                                          e/ou associados envolvidos em projetos de ensino;</li>
+                                                        <li>III – Planejar, executar, acompanhar e avaliar as ofertas educacionais propostas, 
+                                                          em seu âmbito de atuação;</li>
+                                                        <li>IV – Planejar, executar, acompanhar e avaliar a capacitação de docentes 
+                                                          vinculados a projetos e/ou programas do IIDV;</li>
+                                                        <li>V – Planejar as atividades de registro, manutenção e expedição de documentos 
+                                                          relacionados com a vida acadêmica dos estudantes, como diplomas, certificados 
+                                                          de conclusão de cursos, cadastros de estágios e outros similares.</li>
+                                                      </ul>
+                                                      <p style="font-weight: bold; font-size: 18px;">Contato</p>
+                                                      Email: <a style="color: darkblue;" href="mailto:den@institutoidv.org">den@institutoidv.org</a><br/>
+                                                      Fone: <a style="color: darkblue;" href="https://api.whatsapp.com/send?1=pt_BR&phone=558198199-8763" target="_blank">(+55) 81 98199-8763</a>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li class="uk-width-3-4">
+                                        <div class="uk-panel">
+                                          <!--Diretoria de Extensão-->
+                                          <div id="diretoria3">
+                                            <p id="p-diretorias-title">Diretoria de Extensão</p>
+                                              <div id="dirt-box" class="uk-card uk-card-default">
+                                                <div id="dirt-img" class="uk-card-media-top">
+                                                    <img src="img/diretorias/Maria-diretorias-profile.jpg" width="250" height="250" alt="">
+                                                </div>
+                                                <div id="dirt-text" class="uk-card-body">
+                                                    <h3 class="uk-card-title"><a href="http://lattes.cnpq.br/3213226171590628" target="_blank">Dr.ª Maria Velascos</a></h3>
+                                                    <p>O IIDV é uma instituição considera o desenvolvimento de atividades de Extensão como 
+                                                      ações indispensáveis para a promoção do cidadão e da produção do conhecimento 
+                                                      significativo. Além disso, considera a Extensão como meio para viabilizar a integração 
+                                                      entre os diferentes perfis de membros (extensionistas, estudantes da Educação 
+                                                      Básica/Profissional, Graduação, Pós-graduação) associados ao IIDV.<br/>
+                                                      A Diretoria de Extensão do IIDV tem como funções principais:</p>
+                                                    <ul class="uk-list">
+                                                      <li>1. Fomentar políticas, planejar, coordenar e supervisionar o cadastro de projetos 
+                                                        e a execução de atividades de extensão;</li>
+                                                      <li>2. Estimular o processo educativo, cultural e científico que articule ações de ensino 
+                                                        e pesquisa de forma indissociável e propiciem a democratização do conhecimento, 
+                                                        colocando à disposição da sociedade as produções do Ensino e da Pesquisa, buscando 
+                                                        o atendimento das demandas, principalmente permitindo o acesso das classes populares 
+                                                        a essa produção;</li>
+                                                      <li>3. Estimular ações de empreendedorismo, associativismo e cooperativismo para 
+                                                        viabilizar uma relação transformadora entre participantes envolvidos com as ações do IIDV;</li>
+                                                      <li>4. Elaborar minutas editais, termos de referências e outros documentos necessários 
+                                                        à submissão de projetos.</li>
+                                                    </ul>
+                                                    <p style="font-weight: bold; font-size: 18px;">Contato</p>
+                                                    Email: <a style="color: darkblue;" href="mailto:dext@institutoidv.org">dext@institutoidv.org</a><br/>
+                                                    Fone: <a style="color: darkblue;" href="https://api.whatsapp.com/send?1=pt_BR&phone=558198199-8763" target="_blank">(+55) 81 98199-8763</a>
+                                                </div>
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="uk-width-3-4">
+                                      <div class="uk-panel">
+                                        <!--Diretoria de Gestão & Planejamento-->
+                                        <div id="diretoria4">
+                                          <p id="p-diretorias-title">Diretoria de Gestão & Planejamento</p>
+                                            <div id="dirt-box" class="uk-card uk-card-default">
+                                              <div id="dirt-img" class="uk-card-media-top">
+                                                  <img src="img/diretorias/Edisio-Diretorias-profile.jpg" width="250" height="250" alt="">
+                                              </div>
+                                              <div id="dirt-text" class="uk-card-body">
+                                                  <h3 class="uk-card-title"><a href="http://lattes.cnpq.br/8776405092700272" target="_blank">Dr. Edísio Raimundo</a></h3>
+                                                  <p>A Diretoria de Gestão e Planejamento possui como atribuições centrais:</p>
+                                                    <ul class="uk-list">
+                                                      <li>1. Coordenar e executar, no âmbito do IIDV, os processos de planejamento, orçamento, 
+                                                        sistematização de informações, racionalização de custos promovendo seu desenvolvimento 
+                                                        organizacional;</li>
+                                                      <li>2. Coordenar e executar ações relacionadas à comunicação e eventos sob responsabilidade 
+                                                        e/ou coparticipação do IIDV;</li>
+                                                      <li>3. Promover campanhas de mobilização de recursos para financiar programas e projetos, 
+                                                        próprios ou de terceiros;</li>
+                                                      <li>4. Realizar as atividades de comunicação e marketing que auxiliem à realização dos 
+                                                        objetivos do IIDV.</li>
+                                                    </ul>
+                                                    <p style="font-weight: bold; font-size: 18px;">Contato</p>
+                                                    Email: <a style="color: darkblue;" href="mailto:dgplan@institutoidv.org">dgplan@institutoidv.org</a><br/>
+                                                    Fone: <a style="color: darkblue;" href="https://api.whatsapp.com/send?1=pt_BR&phone=558198199-8763" target="_blank">(+55) 81 98199-8763</a>
+                                                </div>
+                                            </div>
+                                          </div>
+                                      </div>
+                                    </li>
+                                    <li class="uk-width-3-4">
+                                      <div class="uk-panel">
+                                        <!--Diretoria de Pesquisa-->
+                                        <div id="diretoria5">
+                                          <p id="p-diretorias-title">Diretoria de Pesquisa</p>
+                                            <div id="dirt-box" class="uk-card uk-card-default">
+                                              <div id="dirt-img" class="uk-card-media-top">
+                                                  <img src="img/diretorias/Renata-diretorias-profile.png" width="250" height="250" alt="">
+                                              </div>
+                                              <div id="dirt-text" class="uk-card-body">
+                                                  <h3 class="uk-card-title"><a href="http://lattes.cnpq.br/6565292837260106" target="_blank">Dr.ª Renata Pedrosa</a></h3>
+                                                  <p>A Diretoria de Pesquisa do Instituto Internacional Despertando Vocações (IIDV), atende a 
+                                                    necessidade de fomentar e sistematizar as políticas de pesquisa da instituição. O IIDV é 
+                                                    uma instituição de caráter multidisciplinar e, por essa razão, considera o desenvolvimento 
+                                                    de pesquisas como ações indispensáveis para a promoção da produção intelectual e da inovação 
+                                                    tecnológica e educacional nos mais diversos domínios. Além disso, considera as pesquisas 
+                                                    como meios para viabilizar a integração entre os diferentes perfis de membros (pesquisadores, 
+                                                    estudantes da Educação Básica/Profissional, Graduação, Pós-graduação) associados ao IIDV.<br/>
+                                                    A Diretoria de Pesquisa do Instituto Internacional Despertando Vocações (IIDV), possui 
+                                                    como principais atribuições:</p>
+                                                    <ul class="uk-list">
+                                                      <li>1. Fomentar políticas, planejar, coordenar e supervisionar o cadastro de projetos 
+                                                        e a execução de atividades de Pesquisa e da Inovação;</li>
+                                                      <li>2. Formar recursos humanos para a investigação, a produção, o empreendedorismo 
+                                                        e a difusão de conhecimentos culturais, científicos e tecnológicos;</li>
+                                                      <li>3. Estimular o processo educativo para a investigação e o empreendedorismo, visando 
+                                                        à investigação, à inovação e à solução de problemas científicos e tecnológicos, 
+                                                        envolvendo todos os níveis e modalidades de ensino, com vistas ao desenvolvimento social;</li>
+                                                      <li>4. Oferecer bolsas, criar e promover prêmios ou concursos e outras ações de 
+                                                        estímulo relacionadas com seu campo de atuação;</li>
+                                                      <li>5. Zelar pela proteção das criações, licenciamento, inovação e outras formas de 
+                                                        transferência de tecnologia e opinar pela conveniência de promover a proteção das 
+                                                        criações desenvolvidas na instituição decorrentes de atividades fomentadas pelo ou 
+                                                        no IIDV de acordo com regulamento específico aprovado pela assembleia geral;</li>
+                                                      <li>6. Avaliar e classificar os resultados decorrentes de atividades e projetos de pesquisa 
+                                                        multidisciplinares;</li>
+                                                      <li>7. Opinar quanto à conveniência de divulgação das criações desenvolvidas na 
+                                                        instituição, passíveis de proteção intelectual;</li>
+                                                      <li>8. Acompanhar o processamento dos pedidos e a manutenção dos títulos de 
+                                                        propriedade intelectual da instituição;</li>
+                                                      <li>9. Elaborar minutas de editais, termos de referências e outros documentos 
+                                                        necessários à submissão de projetos.</li>
+                                                    </ul>
+                                                    <p style="font-weight: bold; font-size: 18px;">Contato</p>
+                                                    Email: <a style="color: darkblue;" href="mailto:dpesq@institutoidv.org">dpesq@institutoidv.org</a><br/>
+                                                    Fone: <a style="color: darkblue;" href="https://api.whatsapp.com/send?1=pt_BR&phone=558198199-8763" target="_blank">(+55) 81 98199-8763</a>
+                                                </div>
+                                            </div>
+                                          </div>
+                                      </div>
+                                    </li>
+                                    <li class="uk-width-3-4">
+                                      <div class="uk-panel">
+                                        <!--Diretoria de Relações Interinstitucionais-->
+                                        <div id="diretoria6">
+                                          <p id="p-diretorias-title">Diretoria de Relações Interinstitucionais</p>
+                                            <div id="dirt-box" class="uk-card uk-card-default">
+                                              <div id="dirt-img" class="uk-card-media-top">
+                                                  <img src="img/diretorias/Erick-diretorias-profile.png" width="250" height="250" alt="">
+                                              </div>
+                                              <div id="dirt-text" class="uk-card-body">
+                                                  <h3 class="uk-card-title"><a href="http://lattes.cnpq.br/2495354396948575" target="_blank">MSc. Erick Viana</a></h3>
+                                                  <p>Compete a Diretoria de Relações Interinstitucionais:</p>
+                                                    <ul class="uk-list">
+                                                      <li>I - Fomentar e executar políticas de integração, articulação, comunicação, eventos (técnicos, 
+                                                        científicos e culturais) e relações interinstitucionais;</li>
+                                                      <li>II – Promover relações internacionais com outras instituições que 
+                                                        dialoguem com os princípios do IIDV e demais atores sociais;</li>
+                                                      <li>III – Estabelecer redes, parcerias e intercâmbios com sociedades científicas, 
+                                                        instituições de ensino e/ou pesquisa, organizações não governamentais, universidades, 
+                                                        Poder Público e outras entidades, públicas ou privadas, nacionais ou estrangeiras.</li>
+                                                    </ul>
+                                                    <p style="font-weight: bold; font-size: 18px;">Contato</p>
+                                                    Email: <a style="color: darkblue;" href="mailto:drinter@institutoidv.org">drinter@institutoidv.org</a><br/>
+                                                    Fone: <a style="color: darkblue;" href="https://api.whatsapp.com/send?1=pt_BR&phone=558198199-8763" target="_blank">(+55) 81 98199-8763</a>
+                                                </div>
+                                            </div>
+                                          </div>
+                                      </div>
+                                    </li>
+                                  </ul>
+                              
+                                  <a id="dirt-slide-icon" class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                                  <a id="dirt-slide-icon" class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                              
+                              </div>
+                                <!--FIM DO SLIDER DIRETORIAS-->
+                              </div>
+                            </div>
+
+                            <!--FIM DA UL (LEMBRAR DE NÃO APAGAR O </UL>)-->
+                          </ul>
+                            <hr class="uk-divider-icon">
+                          <ul class="uk-nav uk-dropdown-nav">
+                            <li><a href="#"><span uk-icon="user"></span>Área do associado (Pessoa Física)</a></li>
+                            <li><a href="#"><span uk-icon="user"></span>Área do associado (Pessoa Juridica)</a></li>
+                            <li><a href="#"><span uk-icon="user"></span>Quero ser um associado</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+                <!-- -------------------------------- NOTICIAS -------------------------------- -->
+        <div class="container">
+            <h2 class="uk-text-bold" style="margin-top: 35px; text-align: center;">Notícias</h2>
+                  <hr class="uk-divider-icon">
+            <div id="noticias-cards">
+                <div class="carders">
+                    <!--NOTÍCIAS-->
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top uk-flex uk-flex-center">
+                            <a href="#"><img src="assets/news_icon_duo.png" width="300px" height="200px" alt=""></a>
+                        </div>
+                        <div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title uk-text-center uk-text-bolder">Projeto Ação & Recuperação elaborado pelo PDVT - NATAL</h3>
+                                <p class="uk-text-center" style="text-align: justify;">No sábado, 23 de outubro de 2021, os professores Laércio Medeiros e Joel Santos, respectivamente coordenador e adjunto do PDVT-Natal, se reuniram no Centro Estadual de Educação Profissional Professora Lourdinha Guerra (CEEPLG) com o grupo de estudantes, pdvianes, que compõe o Grupo de Trabalho do PDVT-Natal, onde foi realizada a primeira reunião presencial do grupo.</p>
+                            </div>
+                        </div>
+                    </div>
+                        <br/>
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top uk-flex uk-flex-center">
+                            <a href="#"><img src="assets/news_icon_duo.png" width="300px" height="200px" alt=""></a>
+                        </div>
+                        <div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title uk-text-center uk-text-bolder">Projeto Ação & Recuperação elaborado pelo PDVT - NATAL</h3>
+                                <p class="uk-text-center" style="text-align: justify;">No sábado, 23 de outubro de 2021, os professores Laércio Medeiros e Joel Santos, respectivamente coordenador e adjunto do PDVT-Natal, se reuniram no Centro Estadual de Educação Profissional Professora Lourdinha Guerra (CEEPLG) com o grupo de estudantes, pdvianes, que compõe o Grupo de Trabalho do PDVT-Natal, onde foi realizada a primeira reunião presencial do grupo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- ------ Paginação ------ -->
+            <ul class="uk-pagination uk-flex-center" uk-margin>
+                <li><a href="#"><span uk-pagination-previous></span></a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#"><span uk-pagination-next></span></a></li>
+            </ul>            
+        </div>
+    </body>
+    </html>

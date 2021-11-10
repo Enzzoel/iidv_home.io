@@ -1,0 +1,563 @@
+/*ALGUMAS PROPRIEDADES DESSE CSS ESTÃO DIFERENTES DAS PROPRIEDADES ATUALIZADAS DO CSS QUE VOCÊ FEZ Há IDs e Classes modificadas */
+
+
+
+/*
+
+DEFININDO O ROLÊ DA BARRA PARA WEB E MOBILE
+
+*/
+
+@media (min-width: 720px){
+    #navbarNav{
+        display: none;
+    }
+    #navbarNavlines{
+        display: initial;
+    }
+}
+@media (max-width: 720px){
+    #navbarNav{
+        display: initial;
+    }
+    #navbarNavlines{
+        display: none;
+    }
+}
+/*
+
+NAVEGAÇÃO
+
+*/
+#navindex{
+    background-color: #e8ebff !important;
+    box-shadow: 0px 2px lightgray;
+}
+#navbarNav ul li a{
+    color: black;
+}
+#navbarNav ul li a:hover{
+    color: #3e4385;
+}
+#navukindex{
+    background-color: #e8ebff !important;
+}
+#btnareanav{
+    border-color: #494949;
+    border-radius: 3px;
+    background-color: #3e4385;
+    color: white;
+}
+#btnareanav:hover{
+    background-color: #d9dbff;
+    color: black;
+}
+#navukul li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+hr{
+    border-color: black;
+}
+#btnclosenav{
+    color: black;
+}
+/*APENAS ARRUMANDO O NGC DAS CORES DA NAV LINEAR*/
+#nav-uk-lines li a{
+    color: #7c7c7c;
+}
+#nav-uk-lines li a:hover{
+    color: #262955;
+}
+/*APENAS ARRUMANDO O DROPDOWN DE ACESSO*/
+#div-index-acesso{
+    background-color: #e8ebff !important;;
+    width: 300px;
+    border-radius: 15px;
+}
+/*
+
+LOGO TEXTO
+
+*/
+#logotext{
+    font-size: 30px;
+    font-weight: bold;
+    color: #f8f8f8;
+    text-align:  'center';
+}
+.box_texto{ 
+    width: 100%;
+    height: 300px;
+    padding-top: 4%;
+    background-color: rgba(0, 0, 255, 0);
+
+}
+/*
+
+CONTEÚDO AREA
+
+*/
+#navarea{
+    background-color: #e8ebff;
+}
+#navarea ul li a{
+    color:black;
+    font-size: 16px;
+}
+#navarea ul li a:hover{
+    color: #545bb3;
+}
+
+.banner{
+    width: 100%;
+    height: 300px;
+    background-attachment: scroll;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.container_boas_vindas{
+    background-color: rgba(0, 1, 41, 0.795);  /* Modificado */
+    flex-direction: row;
+    height: 100%;
+    
+}
+/* ------ 
+
+    AQUI É PARA DEFINIR ESSE ROLÊ DE POSICIONAMENTO NA WEB NO MOBILE DOS BOTÕES
+    
+------*/
+@media (min-width: 720px){
+    #row-parallax{
+        margin: 0;
+        position: absolute;
+        top: 42%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    }
+    #btn-parallax-div{
+        padding: 15px;
+    }
+}
+@media (max-width: 720px){
+    #row-parallax{
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    }
+    #btn-parallax-div{
+        padding: 1px;
+    }
+}
+/* --- BOTÃO NAV QUE FICA PARTE DO BOTTOM RIGHT ---*/
+
+#btn-bot-rig{
+    position: fixed;
+    bottom: 15px;
+    right: 10px;
+    z-index: 20;
+}
+#btn-bot-rig button{
+    cursor: pointer;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #3e4385;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    border: none;
+    border-width: 0px;
+    outline:none;
+    color: white;
+}
+#btn-bot-rig button:hover{
+    background-color: #1c2272;
+}
+#btn-bot-rig button span{
+    text-align: center;
+    align-items: center;
+    display: block;
+    margin: auto;
+}
+#div-bot-rig{
+    border-radius: 15px;
+    background-color: #e8ebff;
+}
+#div-bot-rig ul li{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+#div-bot-rig ul li a{
+    font-size: 16px;
+    color: black;
+    display: inline;
+}
+#div-bot-rig ul li a:hover{
+    color: #00138b;
+}
+
+/* --- MODIFICANDO OS BOTÕES ---*/
+
+/*PDVL*/
+#btn-parallax-pdvl{
+    font-size: 16px;
+    background-color: #92c9cd !important;
+    color: white !important;
+    border-color: #92c9cd !important;
+}
+#btn-parallax-pdvl:hover{
+    background-color: #DAA520 !important;
+    border-color: #ffb700 !important;
+}
+/*PDVG*/
+#btn-parallax-pdvg{
+    font-size: 16px;
+    background-color: #9e8029 !important;
+    color: white !important;
+    border-color: #9e8029 !important;
+}
+#btn-parallax-pdvg:hover{
+    background-color: #DAA520 !important;
+    border-color: #ffb700 !important;
+}
+/*PDVAGRO*/
+#btn-parallax-pdvagro{
+    font-size: 16px;
+    background-color: #9bc44a !important;
+    color: white !important;
+    border-color: #9bc44a !important;
+}
+#btn-parallax-pdvagro:hover{
+    background-color: #DAA520 !important;
+    border-color: #ffb700 !important;
+}
+/*PDVT*/
+#btn-parallax-pdvt{
+    font-size: 16px;
+    background-color: #7362ae !important;
+    color: white !important;
+    border-color: #7362ae !important;
+}
+#btn-parallax-pdvt:hover{
+    background-color: #DAA520 !important;
+    border-color: #ffb700 !important;
+}
+/*
+
+FOOTER
+
+*/
+#footerindex{
+    background-color: #9899b1;
+    align-items: center;
+}
+#footerindex div{
+    padding: 15px;
+    padding-bottom: 4px;
+}
+#footerimg{
+    align-items: center;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+#footerulindex li{
+    color: white;
+}
+#footerulindex li a:hover{
+    color: #bdbfff;
+}
+h6{
+   text-align: center;
+   color: white;
+}
+@media (max-width: 720px)
+{
+    #footerindex{
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    #footerulindex li{
+        font-size: 12px;
+        text-align:left;
+    }
+    #footerli1{
+        font-size: 16px;
+    }
+}
+@media (min-width: 720px)
+{
+    #footerindex{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #footerulindex li{
+        font-size: 16px;
+        text-align: justify;
+    }
+    #footerli1{
+        font-size: 26px;
+    }
+}
+/* POPUPS GERAIS*/
+#popup-body{
+    width: auto;
+}
+/*
+
+EDITAIS
+
+*/
+#p-editais-title{
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+#index_editais div{
+    border-radius: 15px;
+}
+#list-editais img{
+    border-radius: 10px;
+}
+#list-editais-title{
+    font-weight: bold;
+    font-size: 16px;
+}
+/*
+
+EVENTOS
+
+*/
+#index_eventos div{
+    border-radius: 15px;
+}
+#img-index-eventos{
+    position: relative;
+}
+#img-index-eventos img{
+    top: 50%;
+    bottom: 50%;
+    margin: auto;
+}
+#p-eventos-title{
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+#p-eventos-text{
+    font-size: 14px;
+    text-align: justify;
+}
+.uk-label{
+    border-radius: 10px;
+}
+/*Contador dos eventos*/
+#count-eventos{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*Esse contador vai me deixar maluco, agora esse ngc é para arrumar
+ele na forma responsiva*/
+@media (max-width: 720px)
+{
+    #count-eventos-index{
+        text-align: center;
+        font-size: 20px;
+    }
+    #count-eventos-index-sub{
+        font-size: 12px;
+    }
+}
+@media (min-width: 720px)
+{
+    #count-eventos-index{
+        text-align: center;
+        font-size: 28px;
+    }
+    #count-eventos-index-sub{
+        font-size: 16px;
+    }
+}
+/*
+
+MOBILIDADE
+
+*/
+#index_mobilidade div{
+    border-radius: 15px;
+}
+#p-mobilidade-title{
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+#p-mobilidade-subtitle{
+    text-align: center;
+    font-weight: italic;
+    color: black;
+    font-size: 18px;
+}
+#p-mobilidade-text{
+    font-size: 14px;
+    text-align: justify;
+}
+#popup-body button{
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+/*
+
+CONTATOS
+
+*/
+#index_contatos div{
+    border-radius: 15px;
+}
+#p-contatos-title{
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-size: 22px;
+    padding: 5px;
+}
+#div-contatos iframe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width: 720px){
+    #div-contatos iframe{
+        width: 250px;
+        height: 250px;
+    }
+}
+@media (min-width: 720px){
+    #div-contatos iframe{
+        width: 100%;
+    }
+}
+#div-contatos ul{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: auto;
+}
+#div-contatos ul li{
+    font-size: 18px;
+}
+#p-contatos-text{
+    text-align: justify;
+    font-weight: bold;
+    color: black;
+    font-size: 16px;
+}
+/*
+
+DIRETORIAS
+
+*/
+#index_diretorias div{
+    border-radius: 15px;
+}
+#index_diretorias div div{
+    margin: 0px;
+}
+#p-diretorias-title{
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+#dirt-box{
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+#dirt-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+#dirt-img img{
+    border-radius: 15px;
+}
+@media (max-width: 720px){
+    #dirt-text{
+        padding-top: 5px;
+        text-align: center;
+        color: black;
+        margin-left: 0%;
+        margin-right: 0%;
+        font-size: 12px;
+    }
+}
+@media (min-width: 720px){
+    #dirt-text{
+        padding-top: 5px;
+        text-align: center;
+        color: black;
+        margin-left: 15%;
+        margin-right: 15%;
+        font-size: 16px;
+    }
+}
+#dirt-text h3 a{
+    font-weight: bold !important;
+    font-size: 22px !important;
+    color: #000550 !important;
+}
+#dirt-text h3 a:hover{
+    text-decoration: none !important;
+    color: #3e4385 !important;
+}
+#dirt-text p{
+    padding-bottom: 0px;
+}
+#dirt-slide-icon{
+    color: black !important;
+}
+/*
+
+            VÍDEOS
+
+*/
+@media (max-width: 720px){
+    #video-card{
+        height: 150px;
+    }
+}
+@media (min-width: 720px){
+    #video-card{
+        height: 270px;
+    }
+}
+#video-card iframe{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+/*
+
+                                                    OS MELHORES EFEITOS PARA TUDO
+
+*/
